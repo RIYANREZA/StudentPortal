@@ -10,7 +10,7 @@ app.secret_key = "studentportal123"
 # -----------------------------
 # MongoDB Connection
 # -----------------------------
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb+srv://lorditshis_db_user:5dsXJgW1IbksHWX9@cluster0.xla1byc.mongodb.net/?appName=Cluster0")
 
 db = client["studentportal"]
 
