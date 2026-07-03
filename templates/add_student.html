@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Student
+{% endblock %}
+
+{% block content %}
+
+<section class="max-w-3xl mx-auto mt-16 px-6">
+
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-10 shadow-2xl">
+
+        <h2 class="text-5xl font-bold text-green-400">
+
+            ➕ Add Student
+
+        </h2>
+
+        <p class="text-slate-400 mt-4">
+
+            Register a new student into the database.
+
+        </p>
+
+        <form
+        action="/save-student"
+        method="POST"
+        class="mt-10 space-y-6">
+
+            <!-- Name -->
+
+            <div>
+
+                <label
+                class="block mb-2 text-slate-300">
+
+                    Full Name
+
+                </label>
+
+                <input
+                type="text"
+                name="name"
+                placeholder="Enter student name"
+
+                class="w-full bg-slate-950 border border-slate-700 rounded-xl px-5 py-4 outline-none focus:border-green-400 focus:ring-2 focus:ring-green-500 transition-all">
+
+            </div>
+
+            <!-- Age -->
+
+            <div>
+
+                <label
+                class="block mb-2 text-slate-300">
+
+                    Age
+
+                </label>
+
+                <input
+                type="number"
+                name="age"
+                placeholder="Enter age"
+
+                class="w-full bg-slate-950 border border-slate-700 rounded-xl px-5 py-4 outline-none focus:border-green-400 focus:ring-2 focus:ring-green-500 transition-all">
+
+            </div>
+
+            <!-- Branch -->
+
+            <div>
+
+                <label
+                class="block mb-2 text-slate-300">
+
+                    Branch
+
+                </label>
+
+                <input
+                type="text"
+                name="branch"
+                placeholder="Enter branch"
+
+                class="w-full bg-slate-950 border border-slate-700 rounded-xl px-5 py-4 outline-none focus:border-green-400 focus:ring-2 focus:ring-green-500 transition-all">
+
+            </div>
+
+            <!-- Button -->
+
+            <button
+            type="submit"
+
+            class="w-full bg-green-500 hover:bg-green-400 text-black font-bold py-4 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] cursor-pointer">
+
+                Save Student
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}
