@@ -20,7 +20,7 @@ function updateDashboard() {
         greeting = "🌙 Good Evening";
     }
 
-    welcomeMessage.textContent = `${greeting}, Riyan 👋`;
+    welcomeMessage.textContent = `${greeting}, Rishu 👋`;
 
     currentDate.textContent = today.toDateString();
 
