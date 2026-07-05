@@ -29,12 +29,44 @@ function updateDashboard() {
 }
 
 updateDashboard();
-const student = {
-    name: "Riyan",
-    age: 21,
-    branch: "Computer Science"
-};
+const students = [
+    {
+        name: "Riyan",
+        age: 21,
+        branch: "Computer Science"
+    },
+    {
+        name: "Rahul",
+        age: 20,
+        branch: "Mechanical"
+    },
+    {
+        name: "Aman",
+        age: 22,
+        branch: "Electrical"
+    }
+];
+const studentContainer = document.getElementById("studentContainer");
 
-document.getElementById("studentName").textContent = student.name;
-document.getElementById("studentAge").textContent = `Age: ${student.age}`;
-document.getElementById("studentBranch").textContent = `Branch: ${student.branch}`; 
+studentContainer.innerHTML = "";
+students.map(student => {
+
+    studentContainer.innerHTML += `
+
+        <div class="bg-slate-800 p-4 rounded-xl">
+
+            <h3 class="text-green-400 font-bold">
+
+                👤 ${student.name}
+
+            </h3>
+
+            <p>🎂 ${student.age}</p>
+
+            <p>🎓 ${student.branch}</p>
+
+        </div>
+
+    `;
+
+});
