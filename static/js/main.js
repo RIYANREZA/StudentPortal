@@ -29,3 +29,12 @@ function updateDashboard() {
 }
 
 updateDashboard();
+const student = {
+    name: "Riyan",
+    age: 21,
+    branch: "Computer Science"
+};
+
+document.getElementById("studentName").textContent = student.name;
+document.getElementById("studentAge").textContent = `Age: ${student.age}`;
+document.getElementById("studentBranch").textContent = `Branch: ${student.branch}`; 
